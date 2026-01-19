@@ -1,0 +1,15 @@
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\bin\Debug\net10.0\StockAlarm.exe
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\bin\Debug\net10.0\StockAlarm.deps.json
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\bin\Debug\net10.0\StockAlarm.runtimeconfig.json
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\bin\Debug\net10.0\StockAlarm.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\bin\Debug\net10.0\StockAlarm.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.AssemblyInfoInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.AssemblyInfo.cs
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.csproj.CoreCompileInputs.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.sourcelink.json
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\refint\StockAlarm.dll
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.pdb
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\StockAlarm.genruntimeconfig.cache
+C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\StockAlarm\obj\Debug\net10.0\ref\StockAlarm.dll
