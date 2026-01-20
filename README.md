@@ -4,20 +4,7 @@ Aplicação de linha de comando em **C# (.NET)** que monitora continuamente a co
 
 O programa roda enquanto estiver em execução e pode ser encerrado a qualquer momento com `Ctrl + C`.
 
----
-
-## Objetivo do Projeto
-
-Este projeto foi desenvolvido como parte de um **desafio técnico para estágio**, com foco em:
-
-* Aplicação **console** (sem interface gráfica)
-* Uso de **parâmetros via linha de comando**
-* Integração com **API externa (BRAPI)**
-* Envio de **e-mails via SMTP**
-* Organização básica de código (Models / Services)
-* Código simples, legível e funcional
-
----
+Este projeto foi desenvolvido como parte de um desafio técnico da INOA
 
 ## Tecnologias Utilizadas
 
@@ -32,8 +19,8 @@ Este projeto foi desenvolvido como parte de um **desafio técnico para estágio*
 
 ## Pré-requisitos
 
-* **.NET SDK** instalado (versão 9 ou superior recomendada)
-* Token válido da **BRAPI**
+* .NET SDK instalado (versão 9 ou superior recomendada)
+* Token válido da BRAPI
    [https://brapi.dev](https://brapi.dev)
 * Conta de e-mail com acesso SMTP (ex: Gmail, Outlook, etc.)
 * Ambiente Windows para execução do `.exe`
@@ -44,7 +31,7 @@ Este projeto foi desenvolvido como parte de um **desafio técnico para estágio*
 
 ### 1️. Criar o arquivo `config.json`
 
-Crie um arquivo chamado `config.json` **na raiz do projeto** (ele será copiado automaticamente para o diretório de execução no build).
+Crie um arquivo chamado `config.json` na raiz do projeto (ele será copiado automaticamente para o diretório de execução no build).
 
 Exemplo:
 
@@ -73,7 +60,7 @@ Exemplo:
 * **BrapiToken**: token da API BRAPI
 * **PollIntervalMs**: intervalo entre consultas (em ms)
 
-> O arquivo `config.json` está no `.gitignore` e **não deve ser versionado**, pois contém credenciais.
+> O arquivo `config.json` está no `.gitignore` e não deve ser versionado, pois contém credenciais.
 
 ---
 
@@ -93,9 +80,9 @@ StockAlarm.exe PETR4 32.80 29.59
 
 ### Parâmetros (ordem obrigatória)
 
-1. **TICKER** – Código do ativo (ex: PETR4, VALE3)
-2. **PRECO_VENDA** – Preço que dispara alerta de venda
-3. **PRECO_COMPRA** – Preço que dispara alerta de compra
+1. TICKER – Código do ativo (ex: PETR4, VALE3)
+2. PRECO_VENDA – Preço que dispara alerta de venda
+3. PRECO_COMPRA – Preço que dispara alerta de compra
 
 ---
 
@@ -118,8 +105,8 @@ StockAlarm.exe PETR4 32.80 29.59
 
 O sistema possui uma lógica simples de controle para evitar envio repetido de e-mails:
 
-* Um alerta só é enviado **uma vez** enquanto o preço permanecer na condição
-* Um novo alerta só é permitido quando o preço **sai da condição e retorna novamente**
+* Um alerta só é enviado uma vez enquanto o preço permanecer na condição
+* Um novo alerta só é permitido quando o preço sai da condição e retorna novamente
 
 ---
 
@@ -146,7 +133,13 @@ StockAlarm/
 
 ---
 
-## Build / Publicação
+## Exemplo de saída
+<img width="841" height="212" alt="image" src="https://github.com/user-attachments/assets/52383c5b-5123-48dd-8e80-98dd4f1defd9" />
+
+
+---
+
+## Rodar com executável
 
 Para gerar o executável:
 
@@ -156,16 +149,5 @@ dotnet publish -c Release -r win-x64 --self-contained false /p:PublishSingleFile
 
 Após o build:
 
-* Copie o `config.json` para a pasta `publish`
+* Certifique-se que `config.json` está na pasta `publish`. Se não, copie-o da raiz. 
 * Execute o `.exe` normalmente
-
----
-
-## Considerações Finais
-
-* A BRAPI no plano gratuito possui atraso de até **30 minutos** nos dados
-* O intervalo padrão recomendado é de **5 minutos (300000 ms)**
-* O projeto foi mantido propositalmente simples, priorizando clareza e funcionamento
-* A arquitetura permite expansão futura (novas APIs, novos tipos de alerta, etc.)
-
----

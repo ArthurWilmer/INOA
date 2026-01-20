@@ -1,3 +1,0 @@
-C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\publish\StockAlarm.pdb
-C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\publish\config.json
-C:\Users\arthu\OneDrive\Área de Trabalho\github\INOA\publish\StockAlarm.exe
