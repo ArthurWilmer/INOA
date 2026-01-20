@@ -81,7 +81,7 @@ Console.CancelKeyPress += (_, e) =>
 
 // Variáveis de controle
 // buyAlertSent / sellAlertSent evitam envio repetido de alertas
-// attempt -> contador iterações
+// attempt -> contador iterações.
 bool buyAlertSent = false;
 bool sellAlertSent = false;
 int attempt = 0;
